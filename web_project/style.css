@@ -1,0 +1,529 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+h1,
+h2,
+h3,
+p,
+ul {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #e0aeae;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 1px;
+}
+
+.header-logo img {
+  height: 50px;
+}
+
+.create-team-form input[type="text"],
+.create-team-form input[type="number"],
+.create-team-form input[type="date"] {
+  width: 300px;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.create-team-form input[type="submit"] {
+  width: auto;
+}
+
+.create-team-button {
+  padding: 10px 20px;
+  background-color: blue;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.header-links {
+  padding: 10px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 15px;
+  margin: 5px;
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.button:hover {
+  background-color: #ddd;
+  color: #000;
+}
+
+.container {
+  display: flex;
+  flex: 1;
+}
+
+.sidebar {
+  border-right: 3px solid #6d4e4e;
+  border-top: 3px solid #6d4e4e;
+  border-bottom: 3px solid #6d4e4e;
+
+  width: 250px;
+  background-color: #e0aeae;
+  height: auto;
+  padding: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px;
+  display: block;
+}
+
+.sidebar ul li a:hover {
+  background-color: #ddd;
+}
+
+main {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #fff;
+}
+
+section.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.create-team-form input[type="text"],
+.create-team-form input[type="number"],
+.create-team-form input[type="date"] {
+  width: 300px;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.create-team-form input[type="submit"] {
+  width: auto;
+}
+
+.create-team-button {
+  padding: 10px 20px;
+  background-color: blue;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+section.products .product {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  padding: 20px;
+  width: calc(33.333% - 40px);
+}
+
+.product img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.product:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+form {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+form input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: none;
+  background: transparent;
+  padding: 10px;
+  cursor: pointer;
+}
+
+form button:focus {
+  outline: none;
+}
+
+form button:hover {
+  background: #f4f4f4;
+}
+
+footer {
+  background-color: #e0aeae;
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.create-team-form input[type="text"],
+.create-team-form input[type="number"],
+.create-team-form input[type="date"] {
+  width: 300px;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.create-team-form input[type="submit"] {
+  width: auto;
+}
+
+.create-team-button {
+  padding: 10px 20px;
+  background-color: blue;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.footer-contact,
+.footer-nav {
+  padding: 10px 0;
+}
+
+.footer-nav ul {
+  list-style: none;
+}
+
+.footer-nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.footer-nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.search-form {
+  margin-bottom: 20px;
+}
+
+.search-form input[type="text"],
+.search-form input[type="number"] {
+  padding: 10px;
+  margin: 0 5px 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-form button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #5cb85c;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-form button:hover {
+  background-color: #4cae4c;
+}
+
+.product-details {
+  max-width: 800px;
+  margin: auto;
+}
+
+.product-details img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50px;
+  margin-right: 20px;
+}
+
+.product-description {
+  float: right;
+  width: 45%;
+}
+
+.product-details:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.login-container,
+.register-container {
+  width: 300px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"],
+input[type="password"],
+select {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  background-color: #5cb85c;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.create-team-form input[type="text"],
+.create-team-form input[type="number"],
+.create-team-form input[type="date"] {
+  width: 300px;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.create-team-form input[type="submit"] {
+  width: auto;
+}
+
+.create-team-button {
+  padding: 10px 20px;
+  background-color: blue;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4cae4c;
+}
+
+form p {
+  margin-top: 20px;
+}
+
+.add-product-container {
+  width: 80%;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.add-product-container h1 {
+  color: #333;
+  font-size: 24px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.add-product-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.add-product-container label {
+  color: #555;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.add-product-container input[type="text"],
+.add-product-container input[type="number"],
+.add-product-container input[type="email"],
+.add-product-container textarea,
+.add-product-container select,
+.add-product-container input[type="file"] {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.add-product-container textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.add-product-container button {
+  padding: 12px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.add-product-container button:hover {
+  background-color: #0056b3;
+}
+
+.add-product-container .confirmation-message {
+  text-align: center;
+  color: #28a745;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.add-product-container .login-error {
+  color: #dc3545;
+  text-align: center;
+}
+
+.filter-form,
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.product-table th,
+.product-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.product-table th {
+  background-color: #6d4e4e;
+  color: white;
+  cursor: pointer;
+}
+
+.product-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.product-table tr:hover {
+  background-color: #ddd;
+}
+
+.product-table th:first-child {
+  text-align: left;
+}
+
+.New-Arrival {
+  background-color: #e8f5e9;
+}
+.On-Sale {
+  background-color: #fff3e0;
+}
+.Featured {
+  background-color: #e3f2fd;
+}
+.High-Demand {
+  background-color: #fffde7;
+}
+.Normal {
+  background-color: #ffffff;
+}
+
+#shortlist-btn {
+  padding: 5px 10px;
+  background-color: #e79797;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+#shortlist-btn:hover {
+  background-color: #d4cccc;
+}
+
+.create-team-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ensures the container takes up the full height of the viewport */
+}
+
+.create-team-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.create-team-form label {
+  margin-bottom: 5px;
+  text-align: right;
+  margin-right: 10px;
+}
+
+.create-team-form input[type="text"],
+.create-team-form input[type="number"],
+.create-team-form input[type="date"] {
+  width: 300px;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.create-team-form input[type="submit"] {
+  width: auto;
+}
+
+.create-team-button {
+  padding: 10px 20px;
+  background-color: blue;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.create-team-button:hover {
+  background-color: darkblue;
+}
+.logo-image {
+  max-width: 50px; /* Adjust the size as needed */
+  height: auto;
+}
